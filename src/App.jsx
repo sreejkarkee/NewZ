@@ -1,11 +1,13 @@
+import { useState } from "react";
 import Navbar from "./Components/Navbar.jsx";
 import NewsBoard from "./Components/NewsBoard.jsx";
-import './App.css';
-function App() {
+import "./App.css";
+const App = () => {
+  const[category, setCategory] = useState("general");
   return (
     <div>
-      <Navbar />
-      <NewsBoard />
+      <Navbar setCategory={setCategory} />
+      <NewsBoard category={category} />
     </div>
   );
 }

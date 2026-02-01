@@ -1,7 +1,7 @@
 const Navbar = ({ setCategory }) => {
   return (
     <nav
-      className="navbar navbar-expand-lg bg-body-tertiary"
+      className="navbar navbar-expand-lg bg-body-tertiary position-relative mb-3"
       data-bs-theme="dark"
     >
       <div className="container-fluid">

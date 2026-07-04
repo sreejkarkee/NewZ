@@ -8,7 +8,7 @@ const NewsItem = ({ title, description, src, url }) => {
           <h5 className="card-title">{title.slice(0,50)}</h5>
           <p className="card-text">{description ? description.slice(0, 90) : "News is loading..."}</p>
           <a href={url} className="btn btn-primary">
-            Read More 
+            Further More
           </a>
         </div>
       </div>
